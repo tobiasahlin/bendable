@@ -35,7 +35,8 @@
 }
 
 .fs1, .fs-2, .fs-3, .fs-4, .fs-5, .fs-6, .fs-7, .fs-8, .fs-9, .fs-10, .fs-11, .fs-12, .fs-13, .fs-14,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6,
+.f1, .f2, .f3, .f4, .f5, .f6 {
   --font-size-viewport: calc(var(--fs-min) * 1px + (var(--fs-max) - var(--fs-min)) * (100vw - var(--viewport-min) * 1px) / (var(--viewport-max) - var(--viewport-min)));
   --font-size-container: calc(var(--fs-min) * 1px + (var(--fs-max) - var(--fs-min)) * (100cqw - var(--container-min) * 1px) / (var(--container-max) - var(--container-min)));
   font-size: clamp(var(--fs-min) * 1px, var(--font-size-container), var(--fs-max) * 1px);
@@ -73,6 +74,35 @@
 }
 
 /* Add: Body utilities that scale automatically */
+.f1 {
+  --fs-max: var(--fs-7);
+  --fs-min: var(--fs-6);
+}
+
+.f2 {
+  --fs-max: var(--fs-6);
+  --fs-min: var(--fs-5);
+}
+
+.f3 {
+  --fs-max: var(--fs-5);
+  --fs-min: var(--fs-4);
+}
+
+.f4 {
+  --fs-max: var(--fs-4);
+  --fs-min: var(--fs-3);
+}
+
+.f5 {
+  --fs-max: var(--fs-3);
+  --fs-min: var(--fs-2);
+}
+
+.f6 {
+  --fs-max: var(--fs-2);
+  --fs-min: var(--fs-1);
+}
 
 /* Utilities for precise scaling */
 
