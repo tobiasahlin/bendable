@@ -25,16 +25,25 @@
         border-bottom: 1px solid #ddd;
       }
 
-      .header {
-        margin-top: 80px;
+      .intro {
         margin-bottom: 40px;
         padding-bottom: 40px;
         border-bottom: 1px solid #ddd;
       }
 
+      .header {
+        margin-top: 80px;
+      }
+
+      .description {
+        width: 65%;
+        max-width: 550px;
+        font-family: monospace;
+      }
+
       .subheader {
         width: 15%;
-        padding-right: 10px;
+        padding-right: 15px;
         font-family: monospace;
         color: #666;
         --fs-max: 16;
@@ -47,7 +56,10 @@
     </style>
   </head>
   <body>
-    <h1 class="h6 header">Header utilities</h1>
+    <div class="intro container-inline">
+      <h1 class="h6 header">Header utilities</h1>
+      <p class="description fs-container f7">h1 - h6, automatically scales with the viewport. 4 sizing steps between min and max.</p>
+    </div>
     <div class="row">
       <span class="subheader bend">.h1</span>
       <h1 class="h1">Whereas recognition of the inherent dignity</h1>
@@ -78,7 +90,10 @@
       <h1 class="h6">Whereas recognition of the inherent dignity</h1>
     </div>
 
-    <h1 class="h6 header">Text utilities</h1>
+    <div class="intro container-inline">
+      <h1 class="h6 header">Body utilities</h1>
+      <p class="description fs-container f7">f1 - f7, automatically scales with the viewport. 2 sizing steps between min and max.</p>
+    </div>
     <div class="row">
       <span class="subheader bend">.f1</span>
       <h1 class="f1">Whereas recognition of the inherent dignity</h1>
@@ -109,18 +124,29 @@
       <h1 class="f6">Whereas recognition of the inherent dignity</h1>
     </div>
 
-    <h1 class="h6 header">Sizing utilities</h1>
     <div class="row">
-      <span class="subheader bend">fs-min1 .fs-14</span>
-      <h1 class="fs-min1 fs-14">Whereas recognition of the inherent dignity</h1>
+      <span class="subheader bend">.f7</span>
+      <h1 class="f7">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="intro container-inline">
+      <h1 class="h6 header">Sizing utilities</h1>
+      <p class="description fs-container f7">fs-1 - fs-14, automatically scales with the viewport.</p>
+    </div>
+    <div class="row">
+      <span class="subheader bend">fs-min1 .fs-12</span>
+      <h1 class="fs-min1 fs-12">Whereas recognition of the inherent dignity</h1>
     </div>
 
     <div class="row container-inline">
-      <span class="subheader bend">fs-min1 .fs-14 .fs-container</span>
-      <h1 class="fs-min1 fs-14 fs-container">Whereas recognition of the inherent dignity</h1>
+      <span class="subheader bend">fs-min1 .fs-12 .fs-container</span>
+      <h1 class="fs-min1 fs-12 fs-container">Whereas recognition of the inherent dignity</h1>
     </div>
 
-    <h1 class="h6 header">Sizing utilities with breakpoints</h1>
+    <div class="intro container-inline">
+      <h1 class="h6 header">Sizing utilities with breakpoints</h1>
+      <p class="description fs-container f7">fs-1 - fs-14, with breakpoints at sm, md, lg, xl, 2xl, 3xl, and 4xl.</p>
+    </div>
 
     <div class="row">
       <span class="subheader bend">fs-min2 fs-2 lg:fs-5</span>

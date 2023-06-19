@@ -15,6 +15,7 @@
   --fs-3: 16.00;
   --fs-2: 12.80;
   --fs-1: 10.24;
+  /* Default values for min and max font size */
   --fs-min: var(--fs-3);
   --fs-max: var(--fs-3);
   /* View widths */
@@ -27,16 +28,16 @@
   --width-3xl: 1792;
   --width-4xl: 2048;
   --width-5xl: 2404;
+  /* Default values for min and max */
   --viewport-min: var(--width-xs);
   --viewport-max: var(--width-5xl);
   --container-min: var(--width-xs);
   --container-max: var(--width-5xl);
-
 }
 
 .fs-1, .fs-2, .fs-3, .fs-4, .fs-5, .fs-6, .fs-7, .fs-8, .fs-9, .fs-10, .fs-11, .fs-12, .fs-13, .fs-14,
 .h1, .h2, .h3, .h4, .h5, .h6,
-.f1, .f2, .f3, .f4, .f5, .f6,
+.f1, .f2, .f3, .f4, .f5, .f6, .f7,
 .bend {
   --font-size-viewport: calc(var(--fs-min) * 1px + (var(--fs-max) - var(--fs-min)) * (100vw - var(--viewport-min) * 1px) / (var(--viewport-max) - var(--viewport-min)));
   --font-size-container: calc(var(--fs-min) * 1px + (var(--fs-max) - var(--fs-min)) * (100cqw - var(--container-min) * 1px) / (var(--container-max) - var(--container-min)));
@@ -77,31 +78,36 @@
 /* Add: Body utilities that scale automatically */
 .f1 {
   --fs-max: var(--fs-9);
-  --fs-min: var(--fs-6);
+  --fs-min: var(--fs-7);
 }
 
 .f2 {
   --fs-max: var(--fs-8);
-  --fs-min: var(--fs-5);
+  --fs-min: var(--fs-6);
 }
 
 .f3 {
   --fs-max: var(--fs-7);
-  --fs-min: var(--fs-4);
+  --fs-min: var(--fs-5);
 }
 
 .f4 {
   --fs-max: var(--fs-6);
-  --fs-min: var(--fs-3);
+  --fs-min: var(--fs-4);
 }
 
 .f5 {
   --fs-max: var(--fs-5);
-  --fs-min: var(--fs-2);
+  --fs-min: var(--fs-3);
 }
 
 .f6 {
   --fs-max: var(--fs-4);
+  --fs-min: var(--fs-2);
+}
+
+.f7 {
+  --fs-max: var(--fs-3);
   --fs-min: var(--fs-1);
 }
 
