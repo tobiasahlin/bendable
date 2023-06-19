@@ -15,22 +15,22 @@
   --fs-3: 1; /* 16.00px */
   --fs-2: 0.8; /* 12.80px */
   --fs-1: 0.64; /* 10.24px */
-
   --fs-min: var(--fs-3);
   --fs-max: var(--fs-3);
-  --viewport-xs: 320;
-  --viewport-sm: 640;
-  --viewport-md: 768;
-  --viewport-lg: 1024;
-  --viewport-xl: 1280;
-  --viewport-2xl: 1536;
-  --viewport-3xl: 1792;
-  --viewport-4xl: 2048;
-  --viewport-5xl: 2404;
-  --viewport-min: var(--viewport-xs);
-  --viewport-max: var(--viewport-5xl);
-  --container-min: var(--viewport-xs);
-  --container-max: var(--viewport-5xl);
+  /* View */
+  --width-xs: 320;
+  --width-sm: 640;
+  --width-md: 768;
+  --width-lg: 1024;
+  --width-xl: 1280;
+  --width-2xl: 1536;
+  --width-3xl: 1792;
+  --width-4xl: 2048;
+  --width-5xl: 2404;
+  --viewport-min: var(--width-xs);
+  --viewport-max: var(--width-5xl);
+  --container-min: var(--width-xs);
+  --container-max: var(--width-5xl);
 
 }
 
@@ -41,7 +41,7 @@
   font-size: clamp(var(--fs-min) * 1px, var(--font-size-container), var(--fs-max) * 1px);
 }
 
-/* Header utilities that scale automatically */
+/* Header utilities that scale out of the box */
 .h1 {
   --fs-max: var(--fs-12);
   --fs-min: var(--fs-8);
@@ -74,6 +74,8 @@
 
 /* Add: Body utilities that scale automatically */
 
+/* Utilities for precise scaling */
+
 .fs-1  { --fs-max: var(--fs-1); }
 .fs-2  { --fs-max: var(--fs-2); }
 .fs-3  { --fs-max: var(--fs-3); }
@@ -105,10 +107,263 @@
 .fs-min14 { --fs-min: var(--fs-14); }
 
 /* Add: Viewport-utilities for all fs-classes */
+@media (min-width: 640px) {
+  .sm\:fs-1  { --fs-max: var(--fs-1); }
+  .sm\:fs-2  { --fs-max: var(--fs-2); }
+  .sm\:fs-3  { --fs-max: var(--fs-3); }
+  .sm\:fs-4  { --fs-max: var(--fs-4); }
+  .sm\:fs-5  { --fs-max: var(--fs-5); }
+  .sm\:fs-6  { --fs-max: var(--fs-6); }
+  .sm\:fs-7  { --fs-max: var(--fs-7); }
+  .sm\:fs-8  { --fs-max: var(--fs-8); }
+  .sm\:fs-9  { --fs-max: var(--fs-9); }
+  .sm\:fs-10 { --fs-max: var(--fs-10); }
+  .sm\:fs-11 { --fs-max: var(--fs-11); }
+  .sm\:fs-12 { --fs-max: var(--fs-12); }
+  .sm\:fs-13 { --fs-max: var(--fs-13); }
+  .sm\:fs-14 { --fs-max: var(--fs-14); }
 
+  .sm\:fs-min1  { --fs-min: var(--fs-1); }
+  .sm\:fs-min2  { --fs-min: var(--fs-2); }
+  .sm\:fs-min3  { --fs-min: var(--fs-3); }
+  .sm\:fs-min4  { --fs-min: var(--fs-4); }
+  .sm\:fs-min5  { --fs-min: var(--fs-5); }
+  .sm\:fs-min6  { --fs-min: var(--fs-6); }
+  .sm\:fs-min7  { --fs-min: var(--fs-7); }
+  .sm\:fs-min8  { --fs-min: var(--fs-8); }
+  .sm\:fs-min9  { --fs-min: var(--fs-9); }
+  .sm\:fs-min10 { --fs-min: var(--fs-10); }
+  .sm\:fs-min11 { --fs-min: var(--fs-11); }
+  .sm\:fs-min12 { --fs-min: var(--fs-12); }
+  .sm\:fs-min13 { --fs-min: var(--fs-13); }
+  .sm\:fs-min14 { --fs-min: var(--fs-14); }
+}
 
+@media (min-width: 768px) {
+  .md\:fs-1  { --fs-max: var(--fs-1); }
+  .md\:fs-2  { --fs-max: var(--fs-2); }
+  .md\:fs-3  { --fs-max: var(--fs-3); }
+  .md\:fs-4  { --fs-max: var(--fs-4); }
+  .md\:fs-5  { --fs-max: var(--fs-5); }
+  .md\:fs-6  { --fs-max: var(--fs-6); }
+  .md\:fs-7  { --fs-max: var(--fs-7); }
+  .md\:fs-8  { --fs-max: var(--fs-8); }
+  .md\:fs-9  { --fs-max: var(--fs-9); }
+  .md\:fs-10 { --fs-max: var(--fs-10); }
+  .md\:fs-11 { --fs-max: var(--fs-11); }
+  .md\:fs-12 { --fs-max: var(--fs-12); }
+  .md\:fs-13 { --fs-max: var(--fs-13); }
+  .md\:fs-14 { --fs-max: var(--fs-14); }
 
-/* Tailwind syntax: text-sm md:text-base */
+  .md\:fs-min1  { --fs-min: var(--fs-1); }
+  .md\:fs-min2  { --fs-min: var(--fs-2); }
+  .md\:fs-min3  { --fs-min: var(--fs-3); }
+  .md\:fs-min4  { --fs-min: var(--fs-4); }
+  .md\:fs-min5  { --fs-min: var(--fs-5); }
+  .md\:fs-min6  { --fs-min: var(--fs-6); }
+  .md\:fs-min7  { --fs-min: var(--fs-7); }
+  .md\:fs-min8  { --fs-min: var(--fs-8); }
+  .md\:fs-min9  { --fs-min: var(--fs-9); }
+  .md\:fs-min10 { --fs-min: var(--fs-10); }
+  .md\:fs-min11 { --fs-min: var(--fs-11); }
+  .md\:fs-min12 { --fs-min: var(--fs-12); }
+  .md\:fs-min13 { --fs-min: var(--fs-13); }
+  .md\:fs-min14 { --fs-min: var(--fs-14); }
+}
+
+@media (min-width: 1024px) {
+  .lg\:fs-1  { --fs-max: var(--fs-1); }
+  .lg\:fs-2  { --fs-max: var(--fs-2); }
+  .lg\:fs-3  { --fs-max: var(--fs-3); }
+  .lg\:fs-4  { --fs-max: var(--fs-4); }
+  .lg\:fs-5  { --fs-max: var(--fs-5); }
+  .lg\:fs-6  { --fs-max: var(--fs-6); }
+  .lg\:fs-7  { --fs-max: var(--fs-7); }
+  .lg\:fs-8  { --fs-max: var(--fs-8); }
+  .lg\:fs-9  { --fs-max: var(--fs-9); }
+  .lg\:fs-10 { --fs-max: var(--fs-10); }
+  .lg\:fs-11 { --fs-max: var(--fs-11); }
+  .lg\:fs-12 { --fs-max: var(--fs-12); }
+  .lg\:fs-13 { --fs-max: var(--fs-13); }
+  .lg\:fs-14 { --fs-max: var(--fs-14); }
+
+  .lg\:fs-min1  { --fs-min: var(--fs-1); }
+  .lg\:fs-min2  { --fs-min: var(--fs-2); }
+  .lg\:fs-min3  { --fs-min: var(--fs-3); }
+  .lg\:fs-min4  { --fs-min: var(--fs-4); }
+  .lg\:fs-min5  { --fs-min: var(--fs-5); }
+  .lg\:fs-min6  { --fs-min: var(--fs-6); }
+  .lg\:fs-min7  { --fs-min: var(--fs-7); }
+  .lg\:fs-min8  { --fs-min: var(--fs-8); }
+  .lg\:fs-min9  { --fs-min: var(--fs-9); }
+  .lg\:fs-min10 { --fs-min: var(--fs-10); }
+  .lg\:fs-min11 { --fs-min: var(--fs-11); }
+  .lg\:fs-min12 { --fs-min: var(--fs-12); }
+  .lg\:fs-min13 { --fs-min: var(--fs-13); }
+  .lg\:fs-min14 { --fs-min: var(--fs-14); }
+}
+
+@media (min-width: 1280px) {
+  .xl\:fs-1  { --fs-max: var(--fs-1); }
+  .xl\:fs-2  { --fs-max: var(--fs-2); }
+  .xl\:fs-3  { --fs-max: var(--fs-3); }
+  .xl\:fs-4  { --fs-max: var(--fs-4); }
+  .xl\:fs-5  { --fs-max: var(--fs-5); }
+  .xl\:fs-6  { --fs-max: var(--fs-6); }
+  .xl\:fs-7  { --fs-max: var(--fs-7); }
+  .xl\:fs-8  { --fs-max: var(--fs-8); }
+  .xl\:fs-9  { --fs-max: var(--fs-9); }
+  .xl\:fs-10 { --fs-max: var(--fs-10); }
+  .xl\:fs-11 { --fs-max: var(--fs-11); }
+  .xl\:fs-12 { --fs-max: var(--fs-12); }
+  .xl\:fs-13 { --fs-max: var(--fs-13); }
+  .xl\:fs-14 { --fs-max: var(--fs-14); }
+
+  .xl\:fs-min1  { --fs-min: var(--fs-1); }
+  .xl\:fs-min2  { --fs-min: var(--fs-2); }
+  .xl\:fs-min3  { --fs-min: var(--fs-3); }
+  .xl\:fs-min4  { --fs-min: var(--fs-4); }
+  .xl\:fs-min5  { --fs-min: var(--fs-5); }
+  .xl\:fs-min6  { --fs-min: var(--fs-6); }
+  .xl\:fs-min7  { --fs-min: var(--fs-7); }
+  .xl\:fs-min8  { --fs-min: var(--fs-8); }
+  .xl\:fs-min9  { --fs-min: var(--fs-9); }
+  .xl\:fs-min10 { --fs-min: var(--fs-10); }
+  .xl\:fs-min11 { --fs-min: var(--fs-11); }
+  .xl\:fs-min12 { --fs-min: var(--fs-12); }
+  .xl\:fs-min13 { --fs-min: var(--fs-13); }
+  .xl\:fs-min14 { --fs-min: var(--fs-14); }
+}
+
+@media (min-width: 1536px) {
+  .\2xl\:fs-1  { --fs-max: var(--fs-1); }
+  .\2xl\:fs-2  { --fs-max: var(--fs-2); }
+  .\2xl\:fs-3  { --fs-max: var(--fs-3); }
+  .\2xl\:fs-4  { --fs-max: var(--fs-4); }
+  .\2xl\:fs-5  { --fs-max: var(--fs-5); }
+  .\2xl\:fs-6  { --fs-max: var(--fs-6); }
+  .\2xl\:fs-7  { --fs-max: var(--fs-7); }
+  .\2xl\:fs-8  { --fs-max: var(--fs-8); }
+  .\2xl\:fs-9  { --fs-max: var(--fs-9); }
+  .\2xl\:fs-10 { --fs-max: var(--fs-10); }
+  .\2xl\:fs-11 { --fs-max: var(--fs-11); }
+  .\2xl\:fs-12 { --fs-max: var(--fs-12); }
+  .\2xl\:fs-13 { --fs-max: var(--fs-13); }
+  .\2xl\:fs-14 { --fs-max: var(--fs-14); }
+
+  .\2xl\:fs-min1  { --fs-min: var(--fs-1); }
+  .\2xl\:fs-min2  { --fs-min: var(--fs-2); }
+  .\2xl\:fs-min3  { --fs-min: var(--fs-3); }
+  .\2xl\:fs-min4  { --fs-min: var(--fs-4); }
+  .\2xl\:fs-min5  { --fs-min: var(--fs-5); }
+  .\2xl\:fs-min6  { --fs-min: var(--fs-6); }
+  .\2xl\:fs-min7  { --fs-min: var(--fs-7); }
+  .\2xl\:fs-min8  { --fs-min: var(--fs-8); }
+  .\2xl\:fs-min9  { --fs-min: var(--fs-9); }
+  .\2xl\:fs-min10 { --fs-min: var(--fs-10); }
+  .\2xl\:fs-min11 { --fs-min: var(--fs-11); }
+  .\2xl\:fs-min12 { --fs-min: var(--fs-12); }
+  .\2xl\:fs-min13 { --fs-min: var(--fs-13); }
+  .\2xl\:fs-min14 { --fs-min: var(--fs-14); }
+}
+
+@media (min-width: 1792px) {
+  .\3xl\:fs-1  { --fs-max: var(--fs-1); }
+  .\3xl\:fs-2  { --fs-max: var(--fs-2); }
+  .\3xl\:fs-3  { --fs-max: var(--fs-3); }
+  .\3xl\:fs-4  { --fs-max: var(--fs-4); }
+  .\3xl\:fs-5  { --fs-max: var(--fs-5); }
+  .\3xl\:fs-6  { --fs-max: var(--fs-6); }
+  .\3xl\:fs-7  { --fs-max: var(--fs-7); }
+  .\3xl\:fs-8  { --fs-max: var(--fs-8); }
+  .\3xl\:fs-9  { --fs-max: var(--fs-9); }
+  .\3xl\:fs-10 { --fs-max: var(--fs-10); }
+  .\3xl\:fs-11 { --fs-max: var(--fs-11); }
+  .\3xl\:fs-12 { --fs-max: var(--fs-12); }
+  .\3xl\:fs-13 { --fs-max: var(--fs-13); }
+  .\3xl\:fs-14 { --fs-max: var(--fs-14); }
+
+  .\3xl\:fs-min1  { --fs-min: var(--fs-1); }
+  .\3xl\:fs-min2  { --fs-min: var(--fs-2); }
+  .\3xl\:fs-min3  { --fs-min: var(--fs-3); }
+  .\3xl\:fs-min4  { --fs-min: var(--fs-4); }
+  .\3xl\:fs-min5  { --fs-min: var(--fs-5); }
+  .\3xl\:fs-min6  { --fs-min: var(--fs-6); }
+  .\3xl\:fs-min7  { --fs-min: var(--fs-7); }
+  .\3xl\:fs-min8  { --fs-min: var(--fs-8); }
+  .\3xl\:fs-min9  { --fs-min: var(--fs-9); }
+  .\3xl\:fs-min10 { --fs-min: var(--fs-10); }
+  .\3xl\:fs-min11 { --fs-min: var(--fs-11); }
+  .\3xl\:fs-min12 { --fs-min: var(--fs-12); }
+  .\3xl\:fs-min13 { --fs-min: var(--fs-13); }
+  .\3xl\:fs-min14 { --fs-min: var(--fs-14); }
+}
+
+@media (min-width: 2048px) {
+  .\4xl\:fs-1  { --fs-max: var(--fs-1); }
+  .\4xl\:fs-2  { --fs-max: var(--fs-2); }
+  .\4xl\:fs-3  { --fs-max: var(--fs-3); }
+  .\4xl\:fs-4  { --fs-max: var(--fs-4); }
+  .\4xl\:fs-5  { --fs-max: var(--fs-5); }
+  .\4xl\:fs-6  { --fs-max: var(--fs-6); }
+  .\4xl\:fs-7  { --fs-max: var(--fs-7); }
+  .\4xl\:fs-8  { --fs-max: var(--fs-8); }
+  .\4xl\:fs-9  { --fs-max: var(--fs-9); }
+  .\4xl\:fs-10 { --fs-max: var(--fs-10); }
+  .\4xl\:fs-11 { --fs-max: var(--fs-11); }
+  .\4xl\:fs-12 { --fs-max: var(--fs-12); }
+  .\4xl\:fs-13 { --fs-max: var(--fs-13); }
+  .\4xl\:fs-14 { --fs-max: var(--fs-14); }
+
+  .\4xl\:fs-min1  { --fs-min: var(--fs-1); }
+  .\4xl\:fs-min2  { --fs-min: var(--fs-2); }
+  .\4xl\:fs-min3  { --fs-min: var(--fs-3); }
+  .\4xl\:fs-min4  { --fs-min: var(--fs-4); }
+  .\4xl\:fs-min5  { --fs-min: var(--fs-5); }
+  .\4xl\:fs-min6  { --fs-min: var(--fs-6); }
+  .\4xl\:fs-min7  { --fs-min: var(--fs-7); }
+  .\4xl\:fs-min8  { --fs-min: var(--fs-8); }
+  .\4xl\:fs-min9  { --fs-min: var(--fs-9); }
+  .\4xl\:fs-min10 { --fs-min: var(--fs-10); }
+  .\4xl\:fs-min11 { --fs-min: var(--fs-11); }
+  .\4xl\:fs-min12 { --fs-min: var(--fs-12); }
+  .\4xl\:fs-min13 { --fs-min: var(--fs-13); }
+  .\4xl\:fs-min14 { --fs-min: var(--fs-14); }
+}
+
+@media (min-width: 2404px) {
+  .\5xl\:fs-1  { --fs-max: var(--fs-1); }
+  .\5xl\:fs-2  { --fs-max: var(--fs-2); }
+  .\5xl\:fs-3  { --fs-max: var(--fs-3); }
+  .\5xl\:fs-4  { --fs-max: var(--fs-4); }
+  .\5xl\:fs-5  { --fs-max: var(--fs-5); }
+  .\5xl\:fs-6  { --fs-max: var(--fs-6); }
+  .\5xl\:fs-7  { --fs-max: var(--fs-7); }
+  .\5xl\:fs-8  { --fs-max: var(--fs-8); }
+  .\5xl\:fs-9  { --fs-max: var(--fs-9); }
+  .\5xl\:fs-10 { --fs-max: var(--fs-10); }
+  .\5xl\:fs-11 { --fs-max: var(--fs-11); }
+  .\5xl\:fs-12 { --fs-max: var(--fs-12); }
+  .\5xl\:fs-13 { --fs-max: var(--fs-13); }
+  .\5xl\:fs-14 { --fs-max: var(--fs-14); }
+
+  .\5xl\:fs-min1  { --fs-min: var(--fs-1); }
+  .\5xl\:fs-min2  { --fs-min: var(--fs-2); }
+  .\5xl\:fs-min3  { --fs-min: var(--fs-3); }
+  .\5xl\:fs-min4  { --fs-min: var(--fs-4); }
+  .\5xl\:fs-min5  { --fs-min: var(--fs-5); }
+  .\5xl\:fs-min6  { --fs-min: var(--fs-6); }
+  .\5xl\:fs-min7  { --fs-min: var(--fs-7); }
+  .\5xl\:fs-min8  { --fs-min: var(--fs-8); }
+  .\5xl\:fs-min9  { --fs-min: var(--fs-9); }
+  .\5xl\:fs-min10 { --fs-min: var(--fs-10); }
+  .\5xl\:fs-min11 { --fs-min: var(--fs-11); }
+  .\5xl\:fs-min12 { --fs-min: var(--fs-12); }
+  .\5xl\:fs-min13 { --fs-min: var(--fs-13); }
+  .\5xl\:fs-min14 { --fs-min: var(--fs-14); }
+}
+
+/* Set context */
 
 .fs-container {
   font-size: clamp(var(--fs-min) * 1rem, var(--font-size-container), var(--fs-max) * 1rem); 
@@ -116,31 +371,4 @@
 
 .fs-viewport {
   font-size: clamp(var(--fs-min) * 1px, var(--font-size-viewport), var(--fs-max) * 1px);
-}
-
-.text2 {
-  --fs-min: 24;
-  --fs-max: 96;
-}
-
-.text3 {
-  --fs-min: 16;
-  --fs-max: 64;
-}
-
-.text4 {
-  --fs-min: 12;
-  --fs-max: 48;
-}
-
-.f4min {
-  --fs-min: var(--h4);
-}
-
-.fmin-s {
-  --viewport-min: var(--breakpoint-s);
-}
-
-.fmax-xl {
-  --viewport-max: var(--breakpoint-xl);
 }
