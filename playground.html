@@ -1,0 +1,147 @@
+<!doctype html>  
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bendable Playground</title>
+    <link rel="stylesheet" type="text/css" href="bendable.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style type="text/css">
+      :root { font-family: 'Inter var', sans-serif; }
+
+      body {
+        padding: 4vw;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+      }
+
+      .row {
+        display: flex;
+        margin-bottom: 80px;
+        padding-bottom: 80px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .header {
+        margin-top: 80px;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .subheader {
+        width: 15%;
+        padding-right: 10px;
+        font-family: monospace;
+        color: #666;
+        --fs-max: 16;
+        --fs-min: 12;
+      }
+
+      .subheader + * {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="h6 header">Header utilities</h1>
+    <div class="row">
+      <span class="subheader bend">.h1</span>
+      <h1 class="h1">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.h2</span>
+      <h1 class="h2">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.h3</span>
+      <h1 class="h3">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.h4</span>
+      <h1 class="h4">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.h5</span>
+      <h1 class="h5">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.h6</span>
+      <h1 class="h6">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <h1 class="h6 header">Text utilities</h1>
+    <div class="row">
+      <span class="subheader bend">.f1</span>
+      <h1 class="f1">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.f2</span>
+      <h1 class="f2">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.f3</span>
+      <h1 class="f3">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.f4</span>
+      <h1 class="f4">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.f5</span>
+      <h1 class="f5">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.f6</span>
+      <h1 class="f6">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <h1 class="h6 header">Sizing utilities</h1>
+    <div class="row">
+      <span class="subheader bend">fs-min1 .fs-14</span>
+      <h1 class="fs-min1 fs-14">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row container-inline">
+      <span class="subheader bend">fs-min1 .fs-14 .fs-container</span>
+      <h1 class="fs-min1 fs-14 fs-container">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <h1 class="h6 header">Sizing utilities with breakpoints</h1>
+
+    <div class="row">
+      <span class="subheader bend">fs-min2 fs-2 lg:fs-5</span>
+      <h1 class="fs-min2 fs-2 lg:fs-5">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">fs-min2 fs-2 lg:viewport-min-lg lg:fs-5</span>
+      <h1 class="fs-min2 fs-2 lg:viewport-min-lg lg:fs-5">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">fs-min2 fs-5 viewport-min-lg viewport-max-xl xl:fs-min5 xl:fs-11 xl:viewport-min-xl xl:viewport-max-4xl</span>
+      <h1 class="fs-min2 fs-5 viewport-min-lg viewport-max-xl xl:fs-min5 xl:fs-11 xl:viewport-min-xl xl:viewport-max-4xl">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+    <div class="row">
+      <span class="subheader bend">.fs-min1 .fs-6 .md:fs-min4 .md:fs-7</span>
+      <h1 class="fs-min1 fs-6 md:fs-min4 md:fs-7">Whereas recognition of the inherent dignity</h1>
+    </div>
+
+
+  </body>
+</html>
