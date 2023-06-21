@@ -16,6 +16,7 @@
 
       h1, h2, h3, h4, h5, h6 {
         margin: 0;
+        line-height: 1em;
       }
 
       .row {
@@ -67,7 +68,10 @@
 
     <div class="row">
       <span class="subheader bend">.h2</span>
-      <h1 class="h2">Whereas recognition of the inherent dignity</h1>
+      <div style="display: flex; flex-direction: column;">
+        <h1 class="h2">Whereas recognition of the inherent dignity</h1>
+        <h6 class="h5" style="font-weight: 300">Whereas recognition of the inherent dignity</h6>
+      </div>
     </div>
 
     <div class="row">
@@ -131,26 +135,22 @@
 
     <div class="intro container-inline">
       <h1 class="h6 header">Sizing utilities</h1>
-      <p class="description fs-container f7">fs-1 - fs-14, automatically scales with the viewport.</p>
+      <p class="description fs-container f7">font-1 - font-14, automatically scales with the viewport.</p>
     </div>
     <div class="row">
-      <span class="subheader bend">fs-min1 .fs-12</span>
-      <h1 class="fs-min1 fs-12">Whereas recognition of the inherent dignity</h1>
+      <span class="subheader bend">font-2 font-12@4xl</span>
+      <h1 class="font-6 font-12@4xl">Whereas recognition of the inherent dignity</h1>
     </div>
 
-    <div class="row container-inline">
-      <span class="subheader bend">fs-min1 .fs-12 .fs-container</span>
-      <h1 class="fs-min1 fs-12 fs-container">Whereas recognition of the inherent dignity</h1>
-    </div>
-
+    
     <div class="intro container-inline">
       <h1 class="h6 header">Sizing utilities with breakpoints</h1>
-      <p class="description fs-container f7">fs-1 - fs-14, with breakpoints at sm, md, lg, xl, 2xl, 3xl, and 4xl.</p>
+      <p class="description fs-container f7">font-1 - font-14, with breakpoints and size targets at sm, md, lg, xl, 2xl, 3xl, and 4xl.</p>
     </div>
 
     <div class="row">
       <span class="subheader bend">font-1 font-1@sm font-3@md font-6@lg font-3@xl</span>
-      <h1 class="font-1 font-1@sm font-3@md font-6@lg font-3@xl">Whereas recognition of the inherent dignity</h1>
+      <h1 class="font-1 font-1@sm font-3@md font-4@lg font-6@xl">Whereas recognition of the inherent dignity</h1>
     </div>
 
     <div class="row">

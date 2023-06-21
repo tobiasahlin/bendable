@@ -120,6 +120,14 @@
 .font-4 { --fs-min: var(--fs-4); }
 .font-5 { --fs-min: var(--fs-5); }
 .font-6 { --fs-min: var(--fs-6); }
+.font-7 { --fs-min: var(--fs-7); }
+.font-8 { --fs-min: var(--fs-8); }
+.font-9 { --fs-min: var(--fs-9); }
+.font-10 { --fs-min: var(--fs-10); }
+.font-11 { --fs-min: var(--fs-11); }
+.font-12 { --fs-min: var(--fs-12); }
+.font-13 { --fs-min: var(--fs-13); }
+.font-14 { --fs-min: var(--fs-14); }
 
 /* sm - max part of breakpoint */
 @media (min-width: 640px) {
@@ -129,6 +137,14 @@
   .sm\:font-4 { --fs-max: var(--fs-4); }
   .sm\:font-5 { --fs-max: var(--fs-5); }
   .sm\:font-6 { --fs-max: var(--fs-6); }
+  .sm\:font-7 { --fs-max: var(--fs-7); }
+  .sm\:font-8 { --fs-max: var(--fs-8); }
+  .sm\:font-9 { --fs-max: var(--fs-9); }
+  .sm\:font-10 { --fs-max: var(--fs-10); }
+  .sm\:font-11 { --fs-max: var(--fs-11); }
+  .sm\:font-12 { --fs-max: var(--fs-12); }
+  .sm\:font-13 { --fs-max: var(--fs-13); }
+  .sm\:font-14 { --fs-max: var(--fs-14); }
 }
 
 @media (min-width: 768px) {
@@ -138,6 +154,14 @@
   .md\:font-4 { --fs-max: var(--fs-4); }
   .md\:font-5 { --fs-max: var(--fs-5); }
   .md\:font-6 { --fs-max: var(--fs-6); }
+  .md\:font-7 { --fs-max: var(--fs-7); }
+  .md\:font-8 { --fs-max: var(--fs-8); }
+  .md\:font-9 { --fs-max: var(--fs-9); }
+  .md\:font-10 { --fs-max: var(--fs-10); }
+  .md\:font-11 { --fs-max: var(--fs-11); }
+  .md\:font-12 { --fs-max: var(--fs-12); }
+  .md\:font-13 { --fs-max: var(--fs-13); }
+  .md\:font-14 { --fs-max: var(--fs-14); }
 }
 
 @media (min-width: 1024px) {
@@ -147,6 +171,14 @@
   .lg\:font-4 { --fs-max: var(--fs-4); }
   .lg\:font-5 { --fs-max: var(--fs-5); }
   .lg\:font-6 { --fs-max: var(--fs-6); }
+  .lg\:font-7 { --fs-max: var(--fs-7); }
+  .lg\:font-8 { --fs-max: var(--fs-8); }
+  .lg\:font-9 { --fs-max: var(--fs-9); }
+  .lg\:font-10 { --fs-max: var(--fs-10); }
+  .lg\:font-11 { --fs-max: var(--fs-11); }
+  .lg\:font-12 { --fs-max: var(--fs-12); }
+  .lg\:font-13 { --fs-max: var(--fs-13); }
+  .lg\:font-14 { --fs-max: var(--fs-14); }
 }
 
 @media (min-width: 1280px) {
@@ -156,6 +188,14 @@
   .xl\:font-4 { --fs-max: var(--fs-4); }
   .xl\:font-5 { --fs-max: var(--fs-5); }
   .xl\:font-6 { --fs-max: var(--fs-6); }
+  .xl\:font-7 { --fs-max: var(--fs-7); }
+  .xl\:font-8 { --fs-max: var(--fs-8); }
+  .xl\:font-9 { --fs-max: var(--fs-9); }
+  .xl\:font-10 { --fs-max: var(--fs-10); }
+  .xl\:font-11 { --fs-max: var(--fs-11); }
+  .xl\:font-12 { --fs-max: var(--fs-12); }
+  .xl\:font-13 { --fs-max: var(--fs-13); }
+  .xl\:font-14 { --fs-max: var(--fs-14); }
 }
 
 @media (min-width: 1536px) {
@@ -212,6 +252,14 @@
   .font-4\@4xl { --fs-max: var(--fs-4); --viewport-max: var(--width-4xl); }
   .font-5\@4xl { --fs-max: var(--fs-5); --viewport-max: var(--width-4xl); }
   .font-6\@4xl { --fs-max: var(--fs-6); --viewport-max: var(--width-4xl); }
+  .font-7\@4xl { --fs-max: var(--fs-7); --viewport-max: var(--width-4xl); }
+  .font-8\@4xl { --fs-max: var(--fs-8); --viewport-max: var(--width-4xl); }
+  .font-9\@4xl { --fs-max: var(--fs-9); --viewport-max: var(--width-4xl); }
+  .font-10\@4xl { --fs-max: var(--fs-10); --viewport-max: var(--width-4xl); }
+  .font-11\@4xl { --fs-max: var(--fs-11); --viewport-max: var(--width-4xl); }
+  .font-12\@4xl { --fs-max: var(--fs-12); --viewport-max: var(--width-4xl); }
+  .font-13\@4xl { --fs-max: var(--fs-13); --viewport-max: var(--width-4xl); }
+  .font-14\@4xl { --fs-max: var(--fs-14); --viewport-max: var(--width-4xl); }
 }
 
 /* 3xl */
@@ -378,6 +426,14 @@
   .font-4\@4xl { --fs-min: var(--fs-4); --viewport-min: var(--width-4xl); }
   .font-5\@4xl { --fs-min: var(--fs-5); --viewport-min: var(--width-4xl); }
   .font-6\@4xl { --fs-min: var(--fs-6); --viewport-min: var(--width-4xl); }
+  .font-7\@4xl { --fs-min: var(--fs-7); --viewport-min: var(--width-4xl); }
+  .font-8\@4xl { --fs-min: var(--fs-8); --viewport-min: var(--width-4xl); }
+  .font-9\@4xl { --fs-min: var(--fs-9); --viewport-min: var(--width-4xl); }
+  .font-10\@4xl { --fs-min: var(--fs-10); --viewport-min: var(--width-4xl); }
+  .font-11\@4xl { --fs-min: var(--fs-11); --viewport-min: var(--width-4xl); }
+  .font-12\@4xl { --fs-min: var(--fs-12); --viewport-min: var(--width-4xl); }
+  .font-13\@4xl { --fs-min: var(--fs-13); --viewport-min: var(--width-4xl); }
+  .font-14\@4xl { --fs-min: var(--fs-14); --viewport-min: var(--width-4xl); }
 
   .\34 xl\:font-1 { --fs-max: var(--fs-1); --fs-min: var(--fs-1); --viewport-min: var(--width-4xl); }
   .\34 xl\:font-2 { --fs-max: var(--fs-2); --fs-min: var(--fs-2); --viewport-min: var(--width-4xl); }
@@ -394,6 +450,14 @@
   .font-4\@5xl { --fs-min: var(--fs-4); --viewport-min: var(--width-5xl); }
   .font-5\@5xl { --fs-min: var(--fs-5); --viewport-min: var(--width-5xl); }
   .font-6\@5xl { --fs-min: var(--fs-6); --viewport-min: var(--width-5xl); }
+  .font-7\@5xl { --fs-min: var(--fs-7); --viewport-min: var(--width-5xl); }
+  .font-8\@5xl { --fs-min: var(--fs-8); --viewport-min: var(--width-5xl); }
+  .font-9\@5xl { --fs-min: var(--fs-9); --viewport-min: var(--width-5xl); }
+  .font-10\@5xl { --fs-min: var(--fs-10); --viewport-min: var(--width-5xl); }
+  .font-11\@5xl { --fs-min: var(--fs-11); --viewport-min: var(--width-5xl); }
+  .font-12\@5xl { --fs-min: var(--fs-12); --viewport-min: var(--width-5xl); }
+  .font-13\@5xl { --fs-min: var(--fs-13); --viewport-min: var(--width-5xl); }
+  .font-14\@5xl { --fs-min: var(--fs-14); --viewport-min: var(--width-5xl); }
 
   .\35 xl\:font-1 { --fs-max: var(--fs-1); --fs-min: var(--fs-1); --viewport-min: var(--width-5xl); }
   .\35 xl\:font-2 { --fs-max: var(--fs-2); --fs-min: var(--fs-2); --viewport-min: var(--width-5xl); }
