@@ -1,8 +1,7 @@
 :root {
-  /* Major third scale in px, base 16 */
-  --fs-14: 232.83;
-  --fs-13: 186.26;
-  --fs-12: 149.01;
+  /* Major third scale in px, base 16 (add 25% for every step) */
+  --fs-14: 186.26;
+  --fs-13: 149.01;
   --fs-12: 119.21;
   --fs-11: 95.37;
   --fs-10: 76.29;
@@ -205,6 +204,14 @@
   .\32 \:font-4 { --fs-max: var(--fs-4); }
   .\32 \:font-5 { --fs-max: var(--fs-5); }
   .\32 \:font-6 { --fs-max: var(--fs-6); }
+  .\32 \:font-7 { --fs-max: var(--fs-7); }
+  .\32 \:font-8 { --fs-max: var(--fs-8); }
+  .\32 \:font-9 { --fs-max: var(--fs-9); }
+  .\32 \:font-10 { --fs-max: var(--fs-10); }
+  .\32 \:font-11 { --fs-max: var(--fs-11); }
+  .\32 \:font-12 { --fs-max: var(--fs-12); }
+  .\32 \:font-13 { --fs-max: var(--fs-13); }
+  .\32 \:font-14 { --fs-max: var(--fs-14); }
 }
 
 @media (min-width: 1792px) {
