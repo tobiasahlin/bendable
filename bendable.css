@@ -25,6 +25,7 @@
   --width-3xl: 1792;
   --width-4xl: 2048;
   --width-5xl: 2404;
+  
   /* Default values for min and max */
   --viewport-min: var(--width-xs);
   --viewport-max: var(--width-5xl);
