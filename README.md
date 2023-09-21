@@ -25,7 +25,9 @@ Mixing breakpoints and targets could, for example, look like this:
 <h1 class="font-1 font-3@md font-3@xl 5xl:font-14">Scale all the things</h1>
 ```
 
-This set of utilities will keep the font static until the viewport reaches a medium size, where it jumps to the third step on the typescale. It keeps that size until the viewport hits its `xl` size, where it starts scalling smoothly towards `14` at `5xl`. Importantly, you don't have to scale up as the viewport size increases: you can equally scale down, for example:
+This set of utilities will keep the font static until the viewport reaches a medium size, where it jumps to the third step on the typescale. It keeps that size until the viewport hits its `xl` size, where it starts scalling smoothly towards `14` at `5xl`.
+
+Importantly, you don't have to scale up as the viewport size increases: you can equally scale down, for example:
 
 ```html
 <h1 class="font-1 font-2@sm sm:font-4 font-6@md font-3@xl">Whereas recognition of the inherent dignity</h1>
