@@ -37,4 +37,4 @@ See `playground.html` for a more comprehensive list of examples and techniques.
 
 ## Contributing
 
-Please feel free to contribute. A core philosophy of this repo is to keep tooling to a minimum, so please try to stay close to the current setup of the project, while improving the internals.
+This is an early release to showcase and explore the technique's potential and limitations—feedback and contributions are highly appreciated.
