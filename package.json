@@ -1,0 +1,27 @@
+{
+  "name": "bendable",
+  "version": "1.0.0",
+  "description": "Fluid & responsive type scales with composable CSS utilities",
+  "main": "bendable.css",
+  "scripts": {
+    "test": "-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasahlin/bendable.git"
+  },
+  "keywords": [
+    "css",
+    "type",
+    "scale",
+    "responsive",
+    "fluid",
+    "typography"
+  ],
+  "author": "tobiasahlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobiasahlin/bendable/issues"
+  },
+  "homepage": "https://github.com/tobiasahlin/bendable#readme"
+}
