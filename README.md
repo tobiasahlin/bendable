@@ -1,5 +1,5 @@
 # bendable
-Fluid &amp; responsive type scales with composable CSS utilities. See the [blog post for an explanation of the type scaling mechanism](https://tobiasahlin.com/blog/responsive-fluid-css-type-scales/).
+Fluid &amp; responsive type scales with composable CSS utilities. See the [blog post for a more in-depth exploration of the type scaling mechanism](https://tobiasahlin.com/blog/responsive-fluid-css-type-scales/).
 
 ## Installation
 
