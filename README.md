@@ -11,7 +11,7 @@ npm install bendable
 
 ## Usage
 
-To create a header that scales between the minimum and max values of the type scale, between the smallest and largest supported viewport, add the `font-1` and `5xl:font-14` classes:
+To create a header that scales from the minimum size to the max size in the type scale, between the smallest and largest supported viewports, add the `font-1` and `5xl:font-14` classes:
 
 ```html
 <h1 class="font-1 5xl:font-14">Scale all the things</h1>
